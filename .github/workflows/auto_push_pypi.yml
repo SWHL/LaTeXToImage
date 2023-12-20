@@ -5,8 +5,8 @@ on:
     # branches: [ main ]
     # paths:
     #   - 'lineless_table_rec/**'
-    # tags:
-    #   - v*
+    tags:
+      - v*
 
 jobs:
   UnitTesting:
