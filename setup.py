@@ -52,7 +52,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     author="SWHL",
     author_email="liekkaskono@163.com",
-    url="https://github.com/SWHL/CutVideo",
+    url="https://github.com/SWHL/latex_to_image",
     license="MIT",
     include_package_data=True,
     install_requires=read_txt("requirements.txt"),

@@ -8,7 +8,7 @@
   <a href="https://pepy.tech/project/latex-to-image"><img src="https://static.pepy.tech/personalized-badge/latex-to-image?period=total&units=abbreviation&left_color=grey&right_color=blue&left_text=Downloads"></a>
   <a href="https://semver.org/"><img alt="SemVer2.0" src="https://img.shields.io/badge/SemVer-2.0-brightgreen"></a>
   <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
-  <a href="https://github.com/RapidAI/TableStructureRec/blob/c41bbd23898cb27a957ed962b0ffee3c74dfeff1/LICENSE"><img alt="GitHub" src="https://img.shields.io/badge/license-Apache 2.0-blue"></a>
+  <a href="https://github.com/SWHL/latex_to_image/blob/3aa9c53d43281e1527271da023440b8fa95a8dbf/LICENSE"><img alt="GitHub" src="https://img.shields.io/badge/license-MIT-blue"></a>
 
 </div>
 
