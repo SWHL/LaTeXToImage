@@ -48,8 +48,22 @@ $ xelatex --help
 pip install latex_to_image
 ```
 
-### 使用
+### CLI使用
+```bash
+$ latex_to_image "x^2+y^2=1" res.png
+```
 
+### Python使用
+```python
+import cv2
+from latex_to_image import LaTeXToImg
+
+render = LaTeXToImg()
+
+formula = "x^2 + y ^2 = 1"
+img = render(formula)
+cv2.imwrite("res.png", img)
+```
 
 
 ### 参考代码
