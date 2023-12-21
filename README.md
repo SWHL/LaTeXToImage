@@ -14,26 +14,37 @@
 该仓库是用于将LaTeX的公式借助LaTeX工具转换为对应的图像。
 
 
-### 安装
-1. 安装texlive
-- Ubuntu
-    ```bash
-    # Ubuntu
-    sudo apt-get install texlive-full
+### 安装LaTeX编译环境
+Ubuntu:
+```bash
+sudo apt-get install texlive-full
 
-    # 确认是否安装成功
-    $ pdflatex --help
-    Usage: pdftex [OPTION]... [TEXNAME[.tex]] [COMMANDS]
-    or: pdftex [OPTION]... \FIRST-LINE
-    or: pdftex [OPTION]... &FMT ARGS
-    Run pdfTeX on TEXNAME, usually creating TEXNAME.pdf.
-    ```
-- MacOS
+# 确认是否安装成功
+$ xelatex --help
+# Usage: pdftex [OPTION]... [TEXNAME[.tex]] [COMMANDS]
+#  or: pdftex [OPTION]... \FIRST-LINE
+#  or: pdftex [OPTION]... &FMT ARGS
+    # Run pdfTeX on TEXNAME, usually creating TEXNAME.pdf.
+```
+
+MacOS
+
 推荐安装[MacTex](https://tug.org/mactex/mactex-download.html)
 
+验证是否安装成功：
+```bash
+$ xelatex --help
 
-2. 安装运行环境
+# Usage: xetex [OPTION]... [TEXNAME[.tex]] [COMMANDS]
+#    or: xetex [OPTION]... \FIRST-LINE
+#    or: xetex [OPTION]... &FMT ARGS
+#   Run XeTeX on TEXNAME, usually creating TEXNAME.pdf.
+```
 
+### 安装运行环境
+```bash
+pip install latex_to_image
+```
 
 ### 使用
 
@@ -41,4 +52,3 @@
 
 ### 参考代码
 - [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR/blob/main/pix2tex/dataset/latex2png.py)
-- [latex2image](https://pypi.org/project/latex2image/#description)

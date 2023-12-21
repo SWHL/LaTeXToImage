@@ -1,7 +1,6 @@
 # -*- encoding: utf-8 -*-
 # mostly taken from http://code.google.com/p/latexmath2png/
 # install preview.sty
-import io
 import os
 import re
 import shlex
@@ -11,8 +10,7 @@ import traceback
 from pathlib import Path
 from typing import Union
 
-import numpy as np
-from PIL import Image
+import cv2
 
 
 class RenderLaTeX:
@@ -52,15 +50,15 @@ class RenderLaTeX:
         )
         if flag:
             return pdf_file
-        raise LatexError("xelatex meets error.")
+        raise LaTeXError("xelatex meets error.")
 
     def convert_pdf_to_png(self, pdf_file):
         png_file: Path = Path(pdf_file).with_suffix(".png")
         cmd = f"convert -background white -flatten -density {self.dpi} -colorspace gray {pdf_file} -quality 90 {png_file}"
         _, return_code = self.run_cmd(cmd)
         if return_code != 0:
-            raise LatexError(f"PDF to png error\n{cmd}\n{pdf_file}")
-        img = np.array(Image.open(png_file))
+            raise LaTeXError(f"PDF to png error\n{cmd}\n{pdf_file}")
+        img = cv2.imread(str(png_file))
         return img
 
     @staticmethod
@@ -94,5 +92,5 @@ class RenderLaTeX:
             file_path.unlink()
 
 
-class LatexError(Exception):
+class LaTeXError(Exception):
     pass
