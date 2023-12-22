@@ -5,7 +5,7 @@
   <a href=""><img src="https://img.shields.io/badge/Python->=3.6,<3.12-aff.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/OS-Linux%2C%20Mac%2C%20Win-pink.svg"></a>
   <a href="https://pypi.org/project/latex-to-image/"><img alt="PyPI" src="https://img.shields.io/pypi/v/latex-to-image"></a>
-  <a href="https://pepy.tech/project/latex-to-image"><img src="https://static.pepy.tech/personalized-badge/latex-to-image?period=total&units=abbreviation&left_color=grey&right_color=blue&left_text=Downloads"></a>
+  <a href="https://pepy.tech/project/latex-to-image"><img src="https://static.pepy.tech/personalized-badge/latex-to-image?period=total&units=abbreviation&left_color=grey&right_color=blue&left_text=Downloads""></a>
   <a href="https://semver.org/"><img alt="SemVer2.0" src="https://img.shields.io/badge/SemVer-2.0-brightgreen"></a>
   <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
   <a href="https://github.com/SWHL/latex_to_image/blob/3aa9c53d43281e1527271da023440b8fa95a8dbf/LICENSE"><img alt="GitHub" src="https://img.shields.io/badge/license-MIT-blue"></a>
