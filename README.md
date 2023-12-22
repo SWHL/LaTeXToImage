@@ -64,6 +64,10 @@ img = render(formula)
 cv2.imwrite("res.png", img)
 ```
 
+### Result
+<div align="center">
+    <img src="./docs/res.png">
+</div>
 
 ### Reference
 - [LaTeX-OCR](https://github.com/lukas-blecher/LaTeX-OCR/blob/main/pix2tex/dataset/latex2png.py)
